@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Reporte de Asistencia</title>
+</head>
+<body>
+    <header>
+        <h1>Reporte de Asistencia</h1>
+    </header>
+
+    <main>
+        <button onclick="openAsistenciaForm()">Agregar Registro</button>
+        <div id="asistencia-form-container" style="display:none;">
+            <input type="date" id="asistencia-date">
+            <select id="asistencia-status">
+                <option value="Presente">Presente</option>
+                <option value="Ausente">Ausente</option>
+            </select>
+            <button onclick="addAsistencia()">Agregar</button>
+            <button onclick="closeAsistenciaForm()">Cerrar</button>
+        </div>
+        
+        <table id="asistencia-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Estilo Moodle</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

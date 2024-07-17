@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Solicitudes</title>
+</head>
+<body>
+    <header>
+        <h1>Solicitudes</h1>
+    </header>
+
+    <main>
+        <button onclick="openSolicitudForm()">Agregar Solicitud</button>
+        <div id="solicitud-form-container" style="display:none;">
+            <input type="text" id="solicitud-text" placeholder="Descripción de la Solicitud">
+            <button onclick="addSolicitud()">Agregar</button>
+            <button onclick="closeSolicitudForm()">Cerrar</button>
+        </div>
+        
+        <ul id="solicitudes-list"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Estilo Moodle</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

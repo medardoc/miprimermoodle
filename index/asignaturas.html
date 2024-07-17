@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Asignaturas</title>
+</head>
+<body>
+    <header>
+        <h1>Asignaturas</h1>
+    </header>
+
+    <main>
+        <div id="form-container" style="display: none;">
+            <h2>Agregar Asignatura</h2>
+            <form onsubmit="addAsignatura(); return false;">
+                <input type="text" id="asignatura-nombre" placeholder="Nombre de Asignatura" required>
+                <textarea id="asignatura-descripcion" placeholder="Descripción" required></textarea>
+                <button type="submit">Agregar</button>
+                <button type="button" onclick="closeAsignaturaForm()">Cerrar</button>
+            </form>
+        </div>
+
+        <button onclick="openAsignaturaForm()">Agregar Nueva Asignatura</button>
+
+        <table id="asignatura-table">
+            <thead>
+                <tr>
+                    <th>Nombre de Asignatura</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Estilo Moodle</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

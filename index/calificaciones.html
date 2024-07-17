@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Calificaciones</title>
+</head>
+<body>
+    <header>
+        <h1>Calificaciones</h1>
+    </header>
+
+    <main>
+        <button onclick="openCalificacionesForm()">Agregar Calificación</button>
+        <div id="calificaciones-form-container" style="display:none;">
+            <input type="text" id="asignatura-name" placeholder="Nombre de Asignatura">
+            <input type="number" id="nota" placeholder="Nota">
+            <button onclick="addCalificacion()">Agregar</button>
+            <button onclick="closeCalificacionesForm()">Cerrar</button>
+        </div>
+        
+        <table id="calificaciones-table">
+            <thead>
+                <tr>
+                    <th>Asignatura</th>
+                    <th>Nota</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Estilo Moodle</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

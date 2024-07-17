@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Horario</title>
+</head>
+<body>
+    <header>
+        <h1>Horario</h1>
+    </header>
+
+    <main>
+        <button onclick="openForm()">Agregar Clase</button>
+        <div id="form-container" style="display:none;">
+            <input type="text" id="class-name" placeholder="Nombre de la Clase">
+            <input type="text" id="class-time" placeholder="Hora de la Clase">
+            <button onclick="addClass()">Agregar</button>
+            <button onclick="closeForm()">Cerrar</button>
+        </div>
+        
+        <table id="horario-table">
+            <thead>
+                <tr>
+                    <th>Clase</th>
+                    <th>Hora</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Estilo Moodle</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

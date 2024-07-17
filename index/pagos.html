@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Pagos</title>
+</head>
+<body>
+    <header>
+        <h1>Pagos</h1>
+    </header>
+
+    <main>
+        <button onclick="openPagosForm()">Agregar Pago</button>
+        <div id="pagos-form-container" style="display:none;">
+            <input type="text" id="pago-desc" placeholder="Descripción del Pago">
+            <input type="text" id="pago-status" placeholder="Estado del Pago">
+            <button onclick="addPago()">Agregar</button>
+            <button onclick="closePagosForm()">Cerrar</button>
+        </div>
+        
+        <table id="pagos-table">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Estilo Moodle</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
