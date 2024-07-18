@@ -1,4 +1,4 @@
-# miprimermoodle
+# Mi primer moodle
 En este proyecto se desarrolla una moodle basica con aspectos generales del desarrollo web.
 Entre las funcionalidades mas generales en cada una de nuestras ventanas generales como horarios, asignaturas, etc podemos hacer un CRUD con la basedatos de nuestro motor de busqueda tambien conocido como el localStorage, a continuación iamgenes del proyecto.
 
